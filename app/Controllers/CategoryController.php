@@ -13,6 +13,8 @@ class CategoryController extends CoreController
      */
     public function listCategories()
     {
+        $this->checkAuthorization(['admin']);
+
         $categories = Category::findAll();
 
         $this->show('category/category-list', [
@@ -139,7 +141,10 @@ class CategoryController extends CoreController
 
     public function homeCategory()
     {     
+        $this->checkAuthorization(['admin']);
+
         $categories = Category::findAllHomepage();
+        
         $this->show('category/category-home', [
             'categories' => $categories
         ]);

@@ -1,4 +1,4 @@
-<h1>Page de connecion à l'interface admin</h1>
+<h1>Page de connexion à l'interface admin</h1>
 
 <div class="container my-4">
     <form action="" method="POST" class="mt-5">
