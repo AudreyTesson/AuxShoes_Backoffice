@@ -22,6 +22,5 @@
 <body>
 
 <?php
-// On inclut des sous-vues => "partials"
 include __DIR__ . '/../partials/nav.tpl.php';
 ?>

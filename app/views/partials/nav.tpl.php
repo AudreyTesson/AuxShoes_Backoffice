@@ -5,20 +5,6 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- <?php //dump($currentPage); 
-                ?> -->
-
-        <!-- Bonus : gestion de la classe active -->
-        <!-- Plusieurs manières de faire -->
-        <!-- Copyright Christelle -->
-        <!-- <a class="nav-link <?php // echo $viewName === "main/home" ? "active" : ""
-                                ?>" href="<?php // echo $router->generate('main-home') 
-                                                                                                    ?>"> -->
-
-        <!-- Copyright Erwann -->
-        <?php //echo (strpos($currentPage, 'product') !== false) ? "active" : ""; 
-        ?>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">

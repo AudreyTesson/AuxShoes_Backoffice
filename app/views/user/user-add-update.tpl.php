@@ -9,8 +9,6 @@
 
         <h3>
             <ul>
-                <!-- On boucle sur $errors, array d'erreurs transmis par show() -->
-                <!-- On doit vérifier que $errors existe et contient bien quelque chose -->
                 <?php if (isset($viewData['$errors'])) : ?>
                     <?php foreach($errors as $error) : ?>
                     <li><?= $error ?></li>
@@ -50,21 +48,6 @@
                     <option value="2" <?= $user->getStatus() === 2 ? 'selected' : '' ?>>Inactif</option>
                 </select>
             </div>
-            <!-- <div class="mb-3">
-                <label for="role" class="form-label">Rôle</label>
-                <select name="role" id="role" value="<?= $user->getRole() ?>" required>
-                    <option value="admin">Admin</option>
-                    <option value="catalog-manager">Catalog-manager</option>
-                </select>
-            </div>
-            <div class="mb-3">
-                <label for="status" class="form-label">Status</label>
-                <select name="status" id="status" value="<?= $user->getStatus() ?>" required>
-                    <option value="-">-</option>
-                    <option value="1">Actif</option>
-                    <option value="2">Désactivé</option>
-                </select>
-            </div> -->
 
             <div class="d-grid gap-2">
             <button type="submit" class="btn btn-primary"><?= empty($userId) ? 'Ajouter' : 'Modifier' ?></button>

@@ -1,7 +1,3 @@
-<?php
-// dump($_POST['home_order']);
-?>
-
 <form action="" method="POST" class="mt-5">
     <div class="row">
         <?php for ($i = 1; $i <= 5; $i++) : ?>
